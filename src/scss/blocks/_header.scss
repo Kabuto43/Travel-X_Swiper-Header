@@ -24,14 +24,13 @@
 
 	pointer-events: none;
 
-	background-color: rgba(255, 255, 255, 0.386);
-
 	@media (max-width: 1200px) {
 		top: 40px;
 		left: 40px;
 		right: 40px;
 		bottom: 60px;
 	}
+
 	@media (max-width: 767px) {
 		top: 30px;
 		left: 5%;
@@ -66,14 +65,13 @@
 
 .header__slider-controls {
 	pointer-events: all;
-
 	position: absolute;
 	right: 0;
 	bottom: 0;
 
-	background-color: #f3e2e2;
-	height: 20px;
-	width: 120px;
+	@media (max-width: 1023px) {
+		display: none;
+	}
 }
 
 .header__scroll-bar {
