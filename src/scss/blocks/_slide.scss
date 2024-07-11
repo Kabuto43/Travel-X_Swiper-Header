@@ -1,17 +1,15 @@
-:root {
-	--radial-bg: radial-gradient(
-		50% 50% at 50% 50%,
-		rgba(0, 0, 0, 0) 0%,
-		rgba(0, 0, 0, 0.2) 100%
-	);
+$radial-bg: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+);
 
-	--linear-bg: linear-gradient(
-		180deg,
-		rgba(0, 0, 0, 0.2) 0%,
-		rgba(255, 255, 255, 0) 99.99%,
-		rgba(255, 255, 255, 0) 100%
-	);
-}
+$linear-bg: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(255, 255, 255, 0) 99.99%,
+    rgba(255, 255, 255, 0) 100%
+);
 
 .slide {
     height: 100vh;
@@ -27,8 +25,7 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-    background: var(--radial-bg), var(--linear-bg), 
-                url('./../img/slider-bg/01.jpg');
+    background: $radial-bg, $linear-bg, url('./../img/slider-bg/01.jpg');
 
     color: #fff;
 
@@ -100,5 +97,19 @@
 }
 
 .slide__locations {
+    display: flex;
+    column-gap: 20px;
+    width: 70%;
 
+    margin: 0 auto;
+
+    @media (max-width: 1023px) {
+        width: 90%;
+    }
+    
+    @media (max-width: 767px) {
+        width: 90%;
+        flex-direction: column;
+        row-gap: 20px;
+    }
 }
