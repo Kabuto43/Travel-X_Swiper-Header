@@ -1,0 +1,22 @@
+@mixin background-size {
+	background-position: center center; /* x y */
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+@mixin background-clip {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-clip: text;
+    color: transparent;
+}
+
+@mixin background-gradient ($grad-color: #000, $text-color: #fff) {
+    background: linear-gradient(
+            47.06deg,
+            $grad-color -3.87%,
+            rgba(255, 255, 255, 0) 20.89%
+        ),
+        $text-color;
+}
