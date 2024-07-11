@@ -35,6 +35,7 @@ $linear-bg: linear-gradient(
 
     cursor: grub;
 
+
     &:active {
         cursor: grubbing;
     }
@@ -92,7 +93,6 @@ $linear-bg: linear-gradient(
         -webkit-text-fill-color: transparent;
 
         background-clip: text;
-        text-fill-color: transparent;
     }
 }
 
