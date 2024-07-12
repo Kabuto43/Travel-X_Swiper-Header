@@ -83,44 +83,40 @@
 }
 
 .slide__title {
+    display: inline-block;
+    padding: 0 10px;
+
     font-size: 13vw;
     font-weight: 700;
     line-height: 1.22;
+
+    @include background-gradient(#000000);
+
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
 
     @media (max-width: 767px) {
         font-size: 19vw;
     }
 
-    span {
-        padding: 0 10px;
-
-        @include background-gradient;
-        @include background-clip;
-    }
-
-    &--norway span {
+    &--norway {
         @include background-gradient(#051D27);
-        @include background-clip;
     }
 
-    &--austria span {
+    &--austria {
         @include background-gradient(#24373D);
-        @include background-clip;
     }
 
-    &--uae span {
+    &--uae {
         @include background-gradient(#AC7B5D);
-        @include background-clip;
     }
 
-    &--thailand span {
+    &--thailand {
         @include background-gradient(#2B7F89);
-        @include background-clip;
     }
 
-    &--morocco span {
+    &--morocco {
         @include background-gradient(#90634A);
-        @include background-clip;
     }
 }
 

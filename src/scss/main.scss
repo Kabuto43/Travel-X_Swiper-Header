@@ -2,10 +2,10 @@
 @import "./base/reset";
 @import "./base/vars";
 @import "./base/base";
-@import "./base/mixins.scss";
 @import "./base/utils";
 @import "./base/containers";
 @import "./base/sticky-footer";
+@import "./base/mixins";
 
 /* Blocks */
 @import "./blocks/*.scss";
