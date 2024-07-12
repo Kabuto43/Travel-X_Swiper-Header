@@ -6,7 +6,7 @@
 }
 
 .nav__list {
-    @media (ma-width: 1200px) {
+    @media (max-width: 1200px) {
         display: none;
     }
 
@@ -41,12 +41,4 @@
             transform: scaleX(1);
         }
     }
-}
-
-.nav__mobile-nav {
-
-}
-
-.nav-btn {
-
 }
